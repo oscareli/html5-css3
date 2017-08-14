@@ -1,0 +1,22 @@
+{
+  "name": "html5-css3",
+  "version": "1.0.0",
+  "description": "Estudo sobre HTML5 e CSS3 baseado no material da Free Code Camp (https://www.freecodecamp.org) e o livro HTML5 e CSS3 do autor Elizabeth Castro (CAstro Elizabeth, ISBN 978-85-7608-803-5)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscareli/html5-css3.git"
+  },
+  "author": "Oscar Eli <oscareliramos@gmail.com> (http://oscareli.com.br)",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/oscareli/html5-css3/issues"
+  },
+  "homepage": "https://github.com/oscareli/html5-css3#readme",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  }
+}
