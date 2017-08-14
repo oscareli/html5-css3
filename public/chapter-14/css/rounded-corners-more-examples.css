@@ -1,0 +1,31 @@
+div {
+	background: #999;
+	float: left;
+	height: 150px;
+	margin: 10px;
+	width: 150px;
+}
+
+/* NOTE: The following rules are from figure E on page 381. In the book, the selector for all four rules is simply "div". I've modified them below so each is unique, allowing you to view the results in the same HTML page (rounded-corners-more-examples.html). */
+
+.example-1 {
+	/* Makes the radius of the top-left and bottom-right corners 5px and the top- right and bottom-left corners 10px */
+	border-radius: 5px 10px;
+}
+
+.example-2 {
+	/* Makes the radius of the top-left corner 5px, the top-right corner 10px, the bottom-right corner 0, and the bottom-left corner 20px */
+	border-radius: 5px 10px 0 20px;
+}
+
+.example-3 {
+	/* Makes the radius of the top-left corner 20px, the top-right corner 0, the bottom-right corner 0, and the bottom-left corner 0 */
+	border-radius: 20px 0 0 0;
+}
+
+.example-4 {
+	/* Makes the radius of the top-left corner 30px */
+	-moz-border-radius-topleft: 30px;
+	-webkit-border-top-left-radius: 30px;
+	border-top-left-radius: 30px;
+}

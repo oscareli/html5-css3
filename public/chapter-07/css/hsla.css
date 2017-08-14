@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* 25% transparent */
+h1 {
+	background: hsla(282,100%,25%,0.75);
+}
+
+/* 60% transparent */
+h2 {
+	background: hsla(282,100%,25%,0.4);
+}
+
+/* Solid background (not transparent) */
+h3 {
+	background: hsl(282,100%,25%);
+}

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+	font-family: "Palatino Linotype", Palatino, serif;
+	font-size: 100%;
+}
+
+h1,
+h2 {
+	font-family: "Arial Black", Arial, sans-serif;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 1.375em;
+}
+
+h2 {
+	font-size: .9375em;
+}
+
+p {
+	font-size: .875em;
+	line-height: 1.6;
+}
+
+em,
+a:link,
+a:hover {
+	font-weight: bold;
+}
+
+/* Table of Contents navigation */
+#toc a {
+	font-size: .75em;
+}

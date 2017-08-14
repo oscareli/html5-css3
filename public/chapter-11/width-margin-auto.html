@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Width</title>
+	
+<style>
+div {
+	background: yellow;
+	width: 300px;
+padding-bottom: 17px;	
+}
+
+p,
+.example {
+	background: white;
+	border: 6px solid blue;
+	margin: 10px;
+	padding: 5px;
+padding-bottom: 17px;
+}
+
+.example { /* the second paragraph */
+	background: white;
+	border-color: red;
+	width: 200px;
+}
+</style>
+</head>
+<body>
+<div>
+	<p>This paragraph has an automatic width, 10px margins, 5px padding, and 6px blue borders. Since the containing block is 300px wide, this paragraph has a width of 300-10-10-6-6-5-5 (that is, 300-42), or 258 pixels, as determined by the browser automatically. Don't forget you have to subtract the margin, border, and padding from both the left and right sides!</p>
+	
+	<p class="example">This paragraph has <code>class="example"</code> applied to it, so its width is set to 200 pixels, with the same 10px margins, 6px borders (though red), and 5px padding as the first paragraph. So, the total amount of horizontal space it occupies is 200+10+10+6+6+5+5 (that is, 200+42), or 242 pixels. Because it has an explicit width set, the paragraph isn't stretched by the browser automatically to fill the remaining space of the containing block.</p>
+</div>
+</body>
+</html>

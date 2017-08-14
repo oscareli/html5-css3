@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>More examples of link elements with media queries</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" media="all" href="your-basic-styles.css" />
+	<!--
+	Your page can include multiple link elements with media queries to cover a range of conditions. The ones below just demonstrate some of the possibilties.
+	
+	Note that the file names include characteristics of their respective media queries simply as an example, but you can name them anything you like. For instance, the style sheet for "only screen and (orientation: landscape)" could be named something like styles-wideview.css instead of styles-landscape.css.
+	
+	Please note, too, that the style sheet names for the first, second, and last ones are different than what is shown in the book in Fig G of "Understanding and Implementing Media Queries" (p.336). In the book, they all use styles.css. I've given each a unique name below to make it clear that unless you do so, the same style sheet will load for more than media query.
+	-->
+	
+	<link rel="stylesheet" media="only screen and (min-width: 480px) and (max-width: 767px)" href="styles-480-767.css" />
+	
+	<link rel="stylesheet" media="only screen and (orientation: landscape)" href="styles-landscape.css" />
+	
+	<link rel="stylesheet" media="only print and (color)" href="color-pages.css" />
+	
+	<link rel="stylesheet" media="only print and (monochrome)" href="monochrome-pages.css" />
+	
+	<link rel="stylesheet" media="only screen and (color), projection and (color)" href="styles-color-projection.css" />	
+</head>
+<body>
+	<h1>More examples of <code>link</code> elements with media queries</h1>
+	
+	<p><strong>Note:</strong> View the HTML source to see <code>link</code> elements with various media query examples. The style sheets the code references are fictional (no files exist). Consequently, this page doesn't "do" anything&#8212;you won't see any changes to the display.</p>
+</body>
+</html>

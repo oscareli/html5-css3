@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Video with Sources and Flash and Hyperlink Fallback</title>
+</head>
+<body>
+	<h1>Video with Sources and Flash and Hyperlink Fallback</h1>
+	
+	<video controls="controls">
+		<source src="paddle-steamer.mp4" type="video/mp4">
+		<source src="paddle-steamer.webm" type="video/webm">
+		<object type="application/x-shockwave-flash" data="player.swf?videoUrl=paddle-steamer.mp4&controls=true"> 
+			<param name="movie" value="player.swf?videoUrl=paddle-steamer.mp4&controls=true" />
+		</object>
+		<a href="paddle-steamer.mp4">Download the video</a>
+	</video>
+	
+	<!-- NOTE: The Flash video player (player.swf) is JW Player from http://www.longtailvideo.com/players/jw-flv-player. -->
+</body>
+</html>

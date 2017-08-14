@@ -1,0 +1,19 @@
+ul {
+	/* turn off the default markers */
+	list-style: none;
+
+	/* set indentation of list items */
+	margin-left: 0;
+	padding-left: 15px;
+}
+
+li {
+	/* show image 2 pixels from top of item.
+		note that the url to your image may be different depending on where you 
+		store your image relative to the location of your CSS file.
+	*/
+	background: url(../img/arrow-right.gif) no-repeat 0 2px;
+	
+	/* bump the text over to make room for the arrow */
+	padding-left: 25px;
+}

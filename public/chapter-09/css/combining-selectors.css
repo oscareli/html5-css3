@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.project h2[lang|="es"] + p em {
+	color: red;
+}
+
+/*
+The example above is an extreme one to demonstrate what's possible. Following are
+a few ways you could achieve the same results, moving from least specific to most
+specific:
+
+em {
+	color: red;
+}
+
+.project em {
+	color: red;
+}
+
+.about .project em {
+	color: red;
+}
+
+#gaudi em {
+	color: red;
+}
+
+*/

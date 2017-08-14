@@ -1,0 +1,17 @@
+﻿/* Only IE6 uses these rules */
+
+#container {
+	width: 900px;
+}
+
+.entry {
+	margin-right: 0;
+}
+
+.intro {
+	margin-top: 0;
+}
+
+#masthead div {
+	width: 380px;
+}

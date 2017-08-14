@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/* h1 is the first child of the element with the .about class, so this works. */
+.about > h1:first-child {
+	color: red;
+}
+

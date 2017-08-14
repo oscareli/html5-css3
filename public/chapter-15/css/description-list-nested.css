@@ -1,0 +1,14 @@
+dt {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* style the dt of any dl within another dl */
+dl dl dt {
+	text-transform: none;
+}
+
+/* style a dt that follows a dd immediately */
+dd + dt {
+	margin-top: 1em;
+}

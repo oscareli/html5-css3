@@ -1,0 +1,11 @@
+/* 
+	Per the media query in link-element-media-query.html, this style sheet is loaded only if the page is viewed on a screen (say, as opposed to in print mode) and the minimum width of the viewport is 480px.
+*/
+
+
+/* Your styles for this condition go here. */
+p {
+	color: red;
+	font-weight: bold;
+}
+

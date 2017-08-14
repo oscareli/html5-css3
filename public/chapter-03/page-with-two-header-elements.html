@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Example of page with two header elements</title>
+</head>
+<body>
+
+<header role="banner">
+	... [site logo, navigation, etc.] ...
+</header>
+
+<article>
+	<header>
+		<h1>Frequently Asked Questions</h1>
+
+		<nav>
+			<ul>
+				<li><a href="#answer1">What is your return policy?</a></li>
+				<li><a href="#answer2">How do I find a location?</a></li>
+				...
+			</ul>
+		</nav>
+	</header>
+
+	<!-- the header links point to these -->
+	<article id="answer1">
+		<h2>What is your return policy?</h2>
+		<p> ... [answer] ... </p>
+	</article>
+
+	<article id="answer2">
+		<h2>How do I find a location?</h2>
+		<p> ... [answer] ... </p>
+	</article>
+	
+	...
+</article> <!-- end parent article -->
+ 
+</body> 
+</html>	

@@ -1,0 +1,32 @@
+div {
+	background: #999;
+	float: left;
+	height: 150px;
+	margin: 10px;
+	width: 150px;
+}
+
+.all-corners {
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.one-corner {
+	-moz-border-radius-topleft: 75px;
+	-moz-border-top-left-radius: 75px;
+	-webkit-border-top-left-radius: 75px;
+	border-top-left-radius: 75px;
+}
+
+.elliptical-corners {
+	-moz-border-radius: 40px / 20px;
+	-webkit-border-radius: 40px / 20px;
+	border-radius: 40px / 20px;
+}
+
+.circle {
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}

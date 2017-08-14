@@ -1,0 +1,6 @@
+﻿@charset "utf-8";
+
+/* Style new "block-level-like" HTML5 elements so they occupy their own line in older browsers. */
+article, aside, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}

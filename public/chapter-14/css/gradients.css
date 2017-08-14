@@ -1,0 +1,46 @@
+div {
+	float: left;
+	height: 150px;
+	margin: 10px;
+	width: 150px;
+}
+
+.horizontal {
+	background: #cedce7;
+	background: -moz-linear-gradient(left, #cedce7, #596a72);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#cedce7), color-stop(100%,#596a72));
+	background: -webkit-linear-gradient(left, #cedce7,#596a72);
+	background: linear-gradient(left, #cedce7,#596a72);
+}
+
+.vertical {
+	background: #cedce7;
+	background: -moz-linear-gradient(top, #cedce7, #596a72);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cedce7), color-stop(100%,#596a72));
+	background: -webkit-linear-gradient(top, #cedce7,#596a72);
+	background: linear-gradient(top, #cedce7,#596a72);
+}
+
+.diagonal {
+	background: #cedce7;
+	background: -moz-linear-gradient(45deg, #cedce7, #596a72);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#cedce7), color-stop(100%,#596a72));
+	background: -webkit-linear-gradient(45deg, #cedce7,#596a72);
+	background: linear-gradient(45deg, #cedce7,#596a72);
+}
+
+.radial {
+	background: #cedce7;
+	background: -moz-radial-gradient(center, #cedce7, #596a72);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#cedce7), color-stop(100%,#596a72));
+	background: -webkit-radial-gradient(center, #cedce7, #596a72);
+	background: radial-gradient(center, #cedce7, #596a72);
+}
+
+.multi-stop {
+	background: url(multi-stop-gradient.jpg) 0 0 repeat-x;
+	background: -moz-linear-gradient(top, #ff0000 0%, #00ff00 50%, #0000ff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff0000), color-stop(50%, #00ff00), color-stop(100%, #0000ff));
+	background: -webkit-linear-gradient(top, #ff0000 0%, #00ff00 50%, #0000ff 100%);
+	background: linear-gradient(top, #ff0000 0%, #00ff00 50%, #0000ff 100%);
+}

@@ -1,0 +1,39 @@
+/* Base Styles
+------------------------------- */
+
+/* your base rules for all devices would go here */
+
+
+
+
+/* Begin Media Queries
+------------------------------- */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	/* your rules */
+
+}
+
+@media only screen and (orientation: landscape) {
+
+	/* your rules */
+
+}
+
+@media only print and (color) {
+
+	/* your rules */
+
+}
+
+@media only print and (monochrome) {
+
+	/* your rules */
+
+}
+
+@media only screen and (color), projection and (color) {
+
+	/* your rules */
+
+}

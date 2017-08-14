@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Media queries in link elements</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" media="all" href="base.css" />
+	<!--
+	The logic is "only".
+	The type is "screen".
+	The feature: value is "min-width: 480px".
+	
+	Put together, this media query means, "Load styles-480.css only if the page is viewed on a screen (say, as opposed to in print mode) and the minimum width of the viewport is 480px."
+	
+	Your page can include multiple link elements with media queries to cover a range of conditions.
+	-->
+	<link rel="stylesheet" media="only screen and (min-width: 480px)" href="styles-480.css" />
+</head>
+<body>
+	<h1>Example of a media query in a <code>link</code> element</h1>
+
+	<p>Resize your browser window to see the effect of the media query. The paragraphs are green and normal by default, but turn bold red when the width is at least 480 pixels. The heading (an <code>h1</code>) doesn't change because there isn't any CSS saying it should.</p>
+	
+	<p>View the HTML source to see the media query that is part of the <code>link</code> element. See, too, the comments in the two style sheets the page uses: <code>base.css</code> and <code>styles-480.css</code>.</p>
+</body>
+</html>

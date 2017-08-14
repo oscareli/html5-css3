@@ -1,0 +1,5 @@
+﻿/* Only IE7 uses this rule */
+
+#masthead div {
+	width: 380px;
+}

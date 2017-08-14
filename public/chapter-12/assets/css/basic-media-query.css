@@ -1,0 +1,30 @@
+﻿
+/* 	Your regular styles for all browsers go here. Every device gets them unless they are overridden by rules in the media queries. */
+body {
+	font-size: 100%;
+}
+
+p {
+	color: green;
+}
+
+
+/* 
+	Regarding the media query that follows:
+	
+	* The logic is "only".
+	* The type is "screen".
+	* The feature: value is "min-width: 480px".
+	
+	Put together, this media query means, "Use these styles only if the page is viewed on a screen (say, as opposed to in print mode) and the minimum width of the screen is 480px."
+*/
+
+@media only screen and (min-width: 480px) {
+
+	/* Your styles for this condition go here. */
+	p {
+		color: red;
+		font-weight: bold;
+	}
+
+}

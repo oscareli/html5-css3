@@ -1,0 +1,16 @@
+/*
+	This version of base.css is used by link-element-media-query.html from Figure A in "Understanding and Implementing Media Queries" (p.333). It is not to be confused with the base.css file used in the other examples in the chapter; you can find that file in a sub-folder, "/assets/css/".
+*/
+
+/* Your basic styles for all browsers would go here. */
+body {
+	font-size: 100%;
+}
+
+h1 {
+	font-size: 1.25em;
+}
+
+p {
+	color: green;
+}

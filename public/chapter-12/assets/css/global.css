@@ -1,0 +1,613 @@
+@charset "utf-8";
+
+/* ---------------------------------------------- */
+/* Chapter 12: Style Sheets for Mobile to Desktop */
+/* ---------------------------------------------- */
+
+/*
+	NOTE: You will notice a few selectors that begin with either
+			.ie6 or .ie7. These rules use the ie6 and ie7 classes
+			that are applied to the the <html> element via 
+			conditional comments near the beginning of the HTML page 
+			to specify styles only intended for specific versions 
+			of Internet Explorer. All other browsers ignore them.
+*/
+
+/* =================================================== */
+/* =========== Base Styles for All Devices =========== */
+/* =================================================== */
+
+/* CSS RESET
+------------------------------------------------ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	
+/* Prevent mobile zooming while remain desktop zooming.
+	github.com/shichuan/mobile-html5-boilerplate/issues/closed#issue/14
+	*/
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: none;
+}
+
+/* Note from Bruce: The Meyer Reset includes this rule, but I've commented it out so it doesn't take effect. If it weren't commented out, it would turn off the numbers before list items in an ol, and the bullets before list items in an ul. 
+ol, ul {
+	list-style: none;
+} */
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* GENERAL
+---------------------------------------------- */
+body {
+	color: #1d3d76;
+	font: 100% "Trebuchet MS", Verdana, sans-serif;
+	padding-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
+	color: #b74e07;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 1.25em; /* 24px/16px */
+	margin-bottom: .75em;
+	text-transform: lowercase;
+}        
+
+h2 {
+	font-size: 1.375em; /* 22px/16px */
+}
+
+p {
+	margin: 0 0 .5em;
+	padding-right: 10px;
+}
+
+/* link states */
+a {
+	padding: .2em;
+}
+
+a:link {
+	text-decoration: none;
+	color: #597dbd;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #597dbd;
+}
+
+a:focus,
+a:hover,
+a:active {
+	background: #f3cfb6;
+	text-decoration: underline;
+}
+
+.nav a:hover {
+	text-decoration: none;
+}
+
+a.current {
+	color: #1d3d76;
+}
+
+a:hover.current {
+	background: white;
+	cursor: default;
+}
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+/* CONTAINERS
+---------------------------------------------- */
+#container {
+	margin: 0 auto; 
+}
+
+.ie6 #container { /* for IE6 only. see comment in head of finished-page.html */
+	width: 900px;
+}
+
+#page {
+	background: #fff;
+	padding: 10px;
+	max-width: 940px;
+}
+
+#masthead {
+	padding-bottom: 10px;
+	background: #eee;	
+}
+
+.ie6 #masthead div,
+.ie7 #masthead div { /* for IE6 and IE7 only. see comment in head of finished-page.html */
+	width: 380px;
+}
+
+#footer {
+	border-top: 2px dotted #b74e07;
+	margin-top: 10px;
+}
+
+
+/* MASTHEAD
+---------------------------------------------- */
+#masthead {
+	border-bottom: 2px dotted #1d3d76;
+	margin-bottom: 15px;
+}
+
+.logo,
+.nav,
+#masthead form {
+	text-align: center;
+}
+
+/* :::: Logo :::: */
+.logo {
+	font-size: 1.75em; /* 28px/16px */
+	margin: 0;
+	padding: 0.1em 0.2em;	
+}
+
+.logo a {
+	color: #1d3d76;
+	padding: 0;
+}
+
+.logo a:hover {
+	background: transparent;
+	color: #597dbd;
+	text-decoration: none;
+}
+
+.logo span {
+	color: #1d3d76;
+	display: block;
+	font-size: 0.4em; /* 11px/40px */
+	font-style: italic;
+	font-weight: normal;
+}
+
+input,
+label,
+.entry .date,
+.continued ,
+.sidebar p,
+.archive ol  {
+	font-size: .75em; /* 12px/16px */
+}
+
+input[type="text"] {
+	padding: 2px 3px;
+	width: 150px;
+}
+
+input[type="submit"] {
+	vertical-align: top;
+}
+ 
+/* :::: Site Navigation :::: */
+.nav {
+	margin: 15px 0 9px;
+}
+
+.nav li {
+	display: inline;
+	font-size: .7em;
+}
+
+.nav li a {
+	font-size: 1.5em; /* 18px/12px */  /* makes the linked text larger than the bullets */
+}
+
+.nav li:first-child {
+	list-style: none;
+	padding-left: 0;
+}
+
+.nav li:last-child {
+	padding-right: 0;
+}
+
+
+/* CONTENT
+---------------------------------------------- */
+/* Blog snippet */
+.entry {
+	margin: 0 .5em 2em 0;
+}
+
+.ie6 .entry { /* for IE6 only. see comment in head of finished-page.html */
+	margin-right: 0;
+}
+
+.entry h2 {
+	font-size: 1em;
+    line-height: 1;
+}
+
+.entry .date {
+	line-height: 1;
+	margin: 8px 0 6px;
+	padding: 0;
+}
+
+.ie6 .intro { /* for IE6 only. see comment in head of finished-page.html */
+	margin-top: 0;
+}
+
+.continued {
+	font-style: italic;
+	font-weight: bold;
+	font-size: .875em;	
+}
+
+/* :::: Photos :::: */
+.photo {
+	height: 75px;
+	width: 100px;
+}
+
+.photo a {
+	margin: 0;
+	padding: 0;
+}
+
+.photo a:focus,
+.photo a:hover,
+.photo a:active {
+	background: white;
+}
+
+
+/* SIDEBAR
+---------------------------------------------- */
+.sidebar {
+	background: #f5f8fa;
+	padding: 10px;
+}
+
+aside h2 {
+	font-size: .9375em; /* 15px/16px */
+	margin-bottom: 3px;
+	text-transform: lowercase;
+}
+
+.feature {
+	font-style: italic;
+}
+
+/* :::: Archive :::: */
+.archive h2 {
+	margin-top: 10px;
+}
+
+.archive ol {
+	list-style: disc; /* changes list items from numbers to bullets */
+	margin-bottom: 5px;
+	padding-left: 18px;
+}
+
+.archive .continued {
+	margin-top: 0;
+}
+
+
+/* FOOTER
+---------------------------------------------- */
+#footer h1 {
+	font-size: 1em;
+	margin-bottom: .25em;
+	padding-top: .25em;
+}
+
+#footer p {
+	font-size: .6875em;
+}
+
+/* -------------- end of base styles for all devices -------------------- */
+
+
+/* ====================================================================== */
+/* =========== Media Query Styles for Specific Viewport Sizes =========== */
+/* ====================================================================== */
+
+/* 320px
+---------------------------------------------- */
+@media only screen and (min-width: 320px) {
+
+	.nav li {
+		padding-left: 2%;
+	}
+
+	.photo {
+		float: left;
+	}
+
+}
+
+
+/* 480px
+---------------------------------------------- */
+@media only screen and (min-width: 480px) {
+
+	.intro {
+		margin: -5px 0 0 110px;
+	}
+	
+	.entry .date {
+		margin: 0;
+		text-align: right;
+		position: relative;
+		top: -1em;
+	}
+	
+	#main .continued {
+		margin-top: -5px;
+		text-align: right;
+	}
+
+}
+
+
+/* 480px-600px
+---------------------------------------------- */
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+
+	.nav li {
+		padding-left: 4%;
+	}
+
+}
+
+
+/* 600px
+---------------------------------------------- */
+@media only screen and (min-width: 600px) {
+
+	#container {
+		background: url(../img/bg-bluebench.jpg) repeat-y;
+		margin: 20px auto;
+		padding: 30px 10px 0 0;
+		width: 90%;
+	}
+	
+	/* :::: MASTHEAD (logo, nav, search) :::: */
+	#masthead {
+		background: transparent;
+	}
+	
+	.logo,
+	.nav,
+	#masthead form {
+		text-align: left;
+	}
+	
+	/* Logo */
+	.logo {
+		float: left;
+		font-size: 2em; /* 32px/16px */
+	}
+	
+	.logo span {
+		font-size: 0.3em; /* 12px/40px */
+		font-style: italic;
+		margin: 3px 0 0 1em;	
+	}
+	
+	
+	#masthead div {
+		float: right;
+		position: relative;
+	}
+	
+	/* Search */
+	#masthead form {
+		position: absolute;
+		top: 7px;
+		right: 0;
+	}
+		
+	/* Site Navigation */
+	.nav {
+		margin-top: 45px; /* 25px */
+	}
+	
+	
+	/* :::: CONTENT :::: */
+	.continued {
+		font-weight: normal;
+		font-size: .75em;
+	}
+
+}
+/* end 600px */
+
+
+/* 600px-767px
+---------------------------------------------- */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+	
+	.logo {
+		background: #eee;
+		font-size: 1.825em;
+	}
+	
+	#masthead form {
+		width: 235px;
+	}
+	
+	input[type="text"] {
+		width: 130px;
+	}
+	
+	.nav {
+		margin-top: 38px;
+		text-align: right;
+		min-width: 255px;
+	}
+	
+	.nav li {
+		font-size: .625em;
+		font-weight: bold;
+		padding-left: 1%;
+	}
+
+}
+/* end 600px-767px */
+
+
+/* 768px
+---------------------------------------------- */
+@media only screen and (min-width: 768px) {
+
+	#container {
+		max-width: 950px;
+	}
+	
+	#page {
+		padding-left: 0;
+			width: 97.9167%;
+	}
+	
+	/* :::: MASTHEAD :::: */
+	#masthead {
+		margin-bottom: 30px;
+		padding-bottom: 20px;
+	}
+	
+	.nav li {
+		display: list-item;
+		float: left;
+		font-size: .75em; /* 12px/16px */  /* makes the bullets smaller */
+		padding: 0 25px 0 3px;
+	}
+	
+	/* :::: CONTENT :::: */
+	#main {
+		float: left;
+		width: 71%;
+	}
+	
+	h1 {
+		font-size: 1.5em; /* 24px/16px */
+	}
+	
+	.entry {
+		border-right: 2px dashed #b74e07;
+	}
+	
+	.entry h2 {
+		font-size: 1.25em; /* 20px/16px */
+	}
+	
+	.entry .date {
+		margin: 0 1em 0 0;
+	}
+	
+	/* :::: SIDEBAR :::: */
+	#related {
+		margin-left: 72%;
+	}
+	
+	.continued {
+		margin-top: -5px;
+		text-align: right;
+	}
+	
+	.archive h2 {
+		margin-top: 0;
+	}
+	
+	.archive ol {
+		margin-bottom: 0;
+	}
+	
+	/* :::: FOOTER :::: */
+	#footer {
+		clear: both;
+	}
+
+}
+/* end 768px */
+
+
+/* 992px
+---------------------------------------------- */
+@media only screen and (min-width: 992px) {
+
+	/* Your styles for 992px and above would go here. */
+
+}
+
+
+/* 2x - These are retina display devices
+			like the iPhone 4 and iPad
+---------------------------------------------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+only screen and (-o-min-device-pixel-ratio: 3/2), 
+only screen and (min-device-pixel-ratio: 1.5) {
+
+	/* Your styles for retina displays, like iPhone 4 and iPad, would go here. */
+
+}

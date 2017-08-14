@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body {
+	background: #eef;
+	color: #909;
+	font: 100% "Palatino Linotype", Palatino, serif;
+}
+
+h1,
+h2 {
+	color: navy;
+	font: 1.375em "Arial Black", Arial, sans-serif;
+	letter-spacing: .4em;
+}
+
+h2 {
+	font-size: .9375em;
+}
+
+p {
+	font-size: .875em;
+	line-height: 1.6;
+	text-indent: 1.5em;
+}
+
+em {
+	font-weight: bold;
+}
+
+/* Links */
+a:link {
+	color: #74269d;
+	font-weight: bold;
+}
+
+a:visited {
+	color: #909;
+}
+
+a:hover {
+	color: #c3f;
+	font-weight: bold;
+}
+
+/* Table of Contents navigation */
+#toc {
+	background: #ebc6f9;
+}
+
+#toc a {
+	font-size: .75em;
+}

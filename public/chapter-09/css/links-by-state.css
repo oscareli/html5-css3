@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+a:link {
+	color: red;
+}
+
+a:visited {
+	color: orange;
+}
+
+a:focus {
+	color: purple;
+}
+
+a:hover {
+	color: green;
+}
+
+a:active {
+	color: blue;
+}

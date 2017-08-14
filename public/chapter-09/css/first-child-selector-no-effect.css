@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* You might think this will make the first paragraph red, but it won’t! It doesn't affect the page because the h1 is the first child of the element with the .about class, not a p.
+*/
+
+.about > p:first-child {
+	color: red;
+}

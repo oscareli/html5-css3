@@ -1,0 +1,14 @@
+/* Basic styling for favicon.html, the results of which are partially shown on page 163, Figure C. */
+
+body {
+	color: #eb7b31;
+	font-family: Arial, sans-serif;
+	font-size: 100%;
+}
+
+cite { 
+	color: #84601c;
+	font-style: normal;
+	font-weight: bold;
+}
+

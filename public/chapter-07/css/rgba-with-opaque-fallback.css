@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* The order of the background declarations is important. Older versions of IE use the first line (rendering a solid background color as a result), and modern browsers understand both lines but apply the second because it's last. */
+
+h1 {
+	background: #59007f;
+	background: rgba(89,0,127,0.75);
+}
+

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* Every declaration except the second one is for older versions of IE to mimic alpha transparency. The second declaration is the normal RGBa syntax that modern browsers support. */
+h1 {
+	background: transparent;
+	background: rgba(89,0,127,0.75);
+	
+	/* IE8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF59007F,endColorstr=#BF59007F)";
+	
+	/* IE6 & 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF59007F,endColorstr=#BF59007F);
+	
+	zoom: 1;
+}
+

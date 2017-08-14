@@ -1,0 +1,17 @@
+body {
+	background: #ffd700;
+}
+
+.box {
+	background: #000;
+	height: 300px;
+	width: 300px;
+}
+
+div {
+/* Sets the element's opacity to 50% and includes the optional proprietary filter declarations for Internet Explorer prior to version 9 and also ensures the element hasLayout for those older versions of Internet Explorer by using the zoom: 1 declaration */
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	filter: alpha(opacity=50);
+	opacity: .5; /* browsers that support opacity use this and ignore the rest */
+	zoom: 1;
+}

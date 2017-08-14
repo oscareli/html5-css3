@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>z-index</title>
+<style>
+/* Demonstration of z-index property. 
+CSS is embedded instead of in an external style sheet just to keep the demo simple. */
+
+div {
+	background: #ccc;
+	border: 1px solid #666;
+	height: 125px;
+	position: absolute;
+	width: 200px;
+}
+
+.box1 {
+	background: pink;
+	left: 110px;
+	top: 50px;
+	z-index: 10;
+}
+
+.box2 {
+	background: yellow;
+	left: 0;
+	top: 130px;
+	z-index: 50;
+}
+
+.box3 {
+	height: auto;
+	min-height: 125px;
+	position: static;
+	
+	/* Has no effect on stacking order because the element is not positioned absolutely or relatively. */
+	z-index: 1000;
+}
+
+.box4 {
+	background: orange;
+	left: 285px;	
+	top: 65px;
+	z-index: 3;
+}
+</style>
+</head>
+<body>
+<div class="box1">
+	<p>This is box 1</p>
+</div>
+
+<div class="box2">
+	<p>This is box 2</p>
+</div>
+
+<div class="box3">
+	<p>This is box 3</p>
+</div>
+
+<div class="box4">
+	<p>This is box 4</p>
+</div>
+</body>
+</html>

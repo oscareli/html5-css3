@@ -1,0 +1,59 @@
+/* This builds upon stylesheet-multiple-webfonts.css (which, in turn, built upon stylesheet.css) to include @font-face rules for the bold and italic versions of Crimson, and assigns the appropriate fonts to the b and em elements. */
+
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('League_Gothic-webfont.eot');
+    src: url('League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('League_Gothic-webfont.woff') format('woff'),
+         url('League_Gothic-webfont.ttf') format('truetype'),
+         url('League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+font-family: "CrimsonRoman";   
+src: url("Crimson-Roman-webfont.eot");
+src: url("Crimson-Roman-webfont.eot?#iefix") format("embedded-opentype"),
+		url("Crimson-Roman-webfont.woff") format("woff"),
+		url("Crimson-Roman-webfont.ttf") format("truetype"),
+		url("Crimson-Roman-webfont.svg#CrimsonRoman") format("svg");
+}
+
+@font-face {
+font-family: "CrimsonBold";   
+src: url("Crimson-Bold-webfont.eot");
+src: url("Crimson-Bold-webfont.eot?#iefix") format("embedded-opentype"),
+		url("Crimson-Bold-webfont.woff") format("woff"),
+		url("Crimson-Bold-webfont.ttf") format("truetype"),
+		url("Crimson-Bold-webfont.svg#CrimsonBold") format("svg");
+}
+
+@font-face {
+font-family: "CrimsonItalic";   
+src: url("Crimson-Italic-webfont.eot");
+src: url("Crimson-Italic-webfont.eot?#iefix") format("embedded-opentype"),
+		url("Crimson-Italic-webfont.woff") format("woff"),
+		url("Crimson-Italic-webfont.ttf") format("truetype"),
+		url("Crimson-Italic-webfont.svg#CrimsonItalic") format("svg");
+}
+
+body { 
+		font-family: "CrimsonRoman", Georgia, serif;
+}
+
+h1 {
+		font-family: "LeagueGothicRegular", Arial, sans-serif;
+		font-size: 4em;
+		font-weight: normal;
+}
+
+b {
+	font-family:"CrimsonBold", Georgia, serif;
+	font-weight: normal;
+}
+
+em {
+	font-family:"CrimsonItalic", Georgia, serif;
+	font-style: normal;
+}

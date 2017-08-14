@@ -1,0 +1,16 @@
+ol li {
+	font-size: .75em;
+	list-style-type: upper-roman;
+}
+
+ol ol li {
+	list-style-type: upper-alpha;
+}
+
+ol ol ol li {
+	list-style-type: decimal;
+}
+
+li li {
+	font-size: 1em;
+}

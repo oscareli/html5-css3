@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+	font-family: "Palatino Linotype", Palatino, serif;
+}
+
+h1,
+h2 {
+	font-family: "Arial Black", Arial, sans-serif;
+}

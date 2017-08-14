@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* Styles for all media */
+img {
+	border: 4px solid red;
+}
+
+p {
+	color: green;
+	font-style: italic;
+}
+
+/* Print Style Sheet */
+@media print {
+	img {
+		display: none;
+	}
+
+	p {
+		color: black;
+	}
+}

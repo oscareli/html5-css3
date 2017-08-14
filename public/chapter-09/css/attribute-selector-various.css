@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+a[href][title~="howdy"] {
+	color: pink;
+	border: 3px solid pink;
+}
+
+a[href="http://www.yahoo.com"] {
+	color: green;
+	font-weight: bold;
+}
+
+a[class~="two"] {
+	color: orange;
+}
+
+*[lang|="es"] {
+	color: #dd3409;
+}

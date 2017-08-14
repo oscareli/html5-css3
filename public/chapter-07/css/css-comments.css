@@ -1,0 +1,53 @@
+/* ----------------------------------------------------------------------- */
+/* ----- This style sheet contains a variety of example CSS comments ----- */
+/* ----------------------------------------------------------------------- */
+
+/* :::: From Figure A (p.182) :::: */
+
+/* This is a CSS comment. It can be one line long or span several lines. This one is longer than most. Regardless, a CSS comment never displays in the browser with your site's HTML content. The next one is more in line with a comment's typical use. */
+
+
+/* Set default rendering of certain HTML5 elements for older browsers. */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+/* :::: From Figure B (p.182) :::: */
+
+/* Add rounded corners in supporting browsers (from Figure B) */
+.box {
+	-webkit-border-radius: 12px; /* Safari 3-4 */
+	-moz-border-radius: 12px; /* Firefox 3.6 and below */
+	border-radius: 12px; /* modern browsers */
+} /* One more comment for good measure! */
+
+
+
+/* :::: From Figure C (p.183) :::: */
+
+/* GLOBAL NAVIGATION
+------------------------------- */
+
+
+/* MAIN CONTENT
+------------------------------- */
+
+
+/* SIGN-UP FORM
+------------------------------- */
+
+
+/* PAGE FOOTER
+------------------------------- */
+
+
+/* :::: From Figure D (p.183) :::: */
+
+img {
+	border: 4px solid red;
+	/* margin-right: 12px; */
+}
+

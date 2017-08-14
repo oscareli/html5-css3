@@ -1,0 +1,63 @@
+/* 
+This example doesn't appear in the book. It combines several of the effects demonstrated throughout Chapter 14 to style a link.
+*/
+
+body {
+	background: #666;
+	color: #fff;
+	margin: 20px;
+	text-align: center;
+}
+
+p {
+	margin: 40px;
+}
+
+a {
+	border: 6px solid #444;
+	color: #fff;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 12px 24px 12px 18px;
+	text-decoration: none;
+
+	text-shadow: -1px -1px 1px rgba(0,0,0,.25);
+
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border-radius: 9px;
+
+	-moz-box-shadow: inset 1px 1px 0 rgba(255,255,255,.75), inset -1px -1px 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: inset 1px 1px 0 rgba(255,255,255,.75), inset -1px -1px 3px rgba(0,0,0,.5);
+	box-shadow: inset 1px 1px 0 rgba(255,255,255,.75), inset -1px -1px 3px rgba(0,0,0,.5);
+}
+
+a:link,
+a:visited {
+	background: rgb(252,234,187);
+	background: -moz-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,234,187,1)), color-stop(50%,rgba(252,205,77,1)), color-stop(51%,rgba(248,181,0,1)), color-stop(100%,rgba(251,223,147,1)));
+	background: -webkit-linear-gradient(top, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%);
+	background: -o-linear-gradient(top, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%);
+	background: -ms-linear-gradient(top, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%);
+	background: linear-gradient(top, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 );
+}
+
+a:hover,
+a:active {
+	background: rgb(187,229,249);
+	background: -moz-linear-gradient(top, rgba(187,229,249,1) 0%, rgba(77,192,249,1) 50%, rgba(0,164,247,1) 51%, rgba(147,215,249,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(187,229,249,1)), color-stop(50%,rgba(77,192,249,1)), color-stop(51%,rgba(0,164,247,1)), color-stop(100%,rgba(147,215,249,1)));
+	background: -webkit-linear-gradient(top, rgba(187,229,249,1) 0%,rgba(77,192,249,1) 50%,rgba(0,164,247,1) 51%,rgba(147,215,249,1) 100%);
+	background: -o-linear-gradient(top, rgba(187,229,249,1) 0%,rgba(77,192,249,1) 50%,rgba(0,164,247,1) 51%,rgba(147,215,249,1) 100%);
+	background: -ms-linear-gradient(top, rgba(187,229,249,1) 0%,rgba(77,192,249,1) 50%,rgba(0,164,247,1) 51%,rgba(147,215,249,1) 100%);
+	background: linear-gradient(top, rgba(187,229,249,1) 0%,rgba(77,192,249,1) 50%,rgba(0,164,247,1) 51%,rgba(147,215,249,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbe5f9', endColorstr='#93d7f9',GradientType=0 );
+}
+
+.action b {
+	background: url(../img/camera.png) 0 50% no-repeat;
+	padding-left: 38px;
+}

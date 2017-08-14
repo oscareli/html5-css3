@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Audio with Sources and Flash Fallback</title>
+</head>
+<body>
+	<h1>Audio with Sources and Flash Fallback</h1>
+	
+	<audio controls="controls">
+		<source src="piano.ogg" type="audio/ogg">
+		<source src="piano.mp3" type="audio/mp3">
+		<object type="application/x-shockwave-flash" data="player.swf?audioUrl=piano.mp3&controls=true">
+			<param name="movie" value="player.swf?audioUrl=piano.mp3&controls=true" /> 
+		</object>
+	</audio>
+	
+	<!-- NOTE: The Flash video player (player.swf) is JW Player from http://www.longtailvideo.com/players/jw-flv-player. -->
+</body>
+</html>

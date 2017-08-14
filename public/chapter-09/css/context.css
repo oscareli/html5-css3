@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+article.about p {
+	color: red;
+}
+
+
+/* Other ways to get the same effect in select-by-context.html.
+-------------------------------------------------------------------------- */
+
+/* Any p that is a descendant of any article. The least specific approach. */
+article p {
+	color: red;
+}
+
+/* Any p that is a descendant of any element with the about class. The second most specific of the three. */
+.about p {
+	color: red;
+}
+
+
+/* NOTE: All three selectors above provide the same effect, so only one of them is 
+	required to make the text red.
+	 
+	The second selector -- article p {} -- is preferred because it's the least specific.
+	Generally speaking, I recommend making your selectors only as specific as 
+	necessary to yield the desired effect. That way, it's easier to override 
+	a selector with a more specific one for times when you want the style to 
+	deviate.
+*/

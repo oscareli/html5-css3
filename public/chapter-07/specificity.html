@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Specificity</title>
+	<link rel="stylesheet" href="css/specificity.css" />
+</head>
+<body>
+<p>Here's a generic <code>p</code> element. It will be red.</p>
+
+<p class="group">Here's a <code>p</code> element with a <code>class</code> of <code>group</code>. There are two rules that apply, but since the <code>p.group</code> rule is more specific, this paragraph will be blue.</p>
+
+<p id="last" class="group">Here's a <code>p</code> element with an <code>id</code> of <code>intro</code>. There are four rules that could apply to this paragraph. The first two are overruled by the more specific last two. The position breaks the tie between the last two: the one that appears later wins, and thus this paragraph will be magenta.</p>
+</body>
+</html>

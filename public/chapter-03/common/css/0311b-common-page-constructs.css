@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body {
+	font: 100% arial, helvetica, serif;
+}
+
+h1 {
+	font-size: 1.25em ; /* "Arial Black", Arial, sans-serif; */
+}
+
+p {
+	font-size: .875em;
+	line-height: 1.6;
+}
+
+header,
+footer,
+article,
+aside {
+	background: #ccc;
+	padding: 1px 10px;
+}
+
+header,
+footer {
+	width: 770px;
+}
+
+header {
+	margin-bottom: 15px;
+}
+
+article, aside {
+	float: left;
+	height: 400px;
+	margin-bottom: 15px;
+}
+
+article {
+	width: 550px;
+}
+
+aside {
+	margin-left: 20px;
+	width: 180px;
+}
+
+footer {
+	clear: both;
+}

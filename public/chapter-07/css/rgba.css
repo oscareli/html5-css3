@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* Set repeating page background image and default text color */
+body {
+	background: url(../img/blueflax.jpg);
+	color: #ff0;
+}
+
+/* 25% transparent */
+h1 {
+	background: rgba(89,0,127,0.75);
+}
+
+/* 60% transparent */
+h2 {
+	background: rgba(89,0,127,0.4);
+}
+
+/* Solid background (not transparent) */
+h3 {
+	background: rgb(89,0,127);
+}
